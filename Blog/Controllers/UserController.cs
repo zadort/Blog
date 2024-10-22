@@ -34,7 +34,7 @@ namespace Blog.Controllers
                 Id = Guid.NewGuid(),
                 Title = createUserDto.Title,
                 Description = createUserDto.Description,
-                CretedTime = createUserDto.CretedTime
+                CreatedTime = createUserDto.CreatedTime,
                 LastUpdated = createUserDto.LastUpdated
             };
 
