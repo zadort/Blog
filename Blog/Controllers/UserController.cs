@@ -54,9 +54,11 @@ namespace Blog.Controllers
             {
                 var existingUser = context.NewUser.FirstOrDefault(x => x.Id == azon);
 
-                existingUser.Name = updateUserDto.Name;
-                existingUser.Age = updateUserDto.Age;
-                existingUser.License = updateUserDto.License;
+                existingUser.Id = updateUserDto.Id;
+                existingUser.Title = updateUserDto.Title;
+                existingUser.Description = updateUserDto.Description;
+                existingUser.CreatedTime = updateUserDto.CreatedTime;
+                existingUser.LastUpdated = updateUserDto.LastUpdated;
 
                 context.NewUser.Update(existingUser);
                 context.SaveChanges();
